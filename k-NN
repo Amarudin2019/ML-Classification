@@ -1,0 +1,18 @@
+# Import model(metode) dan dataset yang akan digunakan
+from sklearn.datasets import load_iris
+from sklearn.neighbors import KNeighborsClassifier
+
+# siapkan dataset
+iris = load_iris()
+x, y = iris.data, iris.target
+
+# simpan Metode Klasifikasi
+model = KNeighborsClassifier()
+
+# Train Model
+model.fit(x, y)
+
+# Gunakan Model untuk mendeteksi data baru
+new_data = [0,1,1,0]
+res = model.predict([new_data])
+print(iris.target_names[res])
