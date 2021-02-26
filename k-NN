@@ -13,6 +13,6 @@ model = KNeighborsClassifier()
 model.fit(x, y)
 
 # Gunakan Model untuk mendeteksi data baru
-new_data = [0,1,1,0]
-res = model.predict([new_data])
-print(iris.target_names[res])
+data_baru = [0,1,1,0]
+tes = model.predict([data_baru])
+print(iris.target_names[tes])
