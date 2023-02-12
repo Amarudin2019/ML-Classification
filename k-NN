@@ -1,3 +1,4 @@
+```
 # Import library
 from sklearn.datasets import load_iris
 from sklearn.neighbors import KNeighborsClassifier
@@ -18,3 +19,4 @@ model.fit(x, y)
 data_baru = [0,1,1,0]
 tes = model.predict([data_baru])
 print(iris.target_names[tes])
+```
